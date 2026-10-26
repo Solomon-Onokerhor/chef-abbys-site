@@ -1,0 +1,5 @@
+# Editor/session settings
+.claude/
+
+# Raw press collages; the cropped photos the site uses live in images/story
+images/press/

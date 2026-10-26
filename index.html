@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chef Abbys | Ghana, Served to the World</title>
+  <meta name="description" content="Chef Abbys: Ghanaian chef, creator and African Food Tourist. TIME100 Creators 2025. Ghana, served to the world." />
+  <meta name="theme-color" content="#120b07" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+  </div>
+
+  <!-- LOADER -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__row"><span>Chef Abbys</span><span>Kumasi &rarr; The World</span></div>
+    <div class="loader__count" id="loader-num">000</div>
+    <div class="loader__row"><span>Heating the pot</span><span class="loader__bar"><i></i></span></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">Chef<em>Abbys</em></a>
+    <div class="nav__clock"><span class="pulse"></span>Kumasi, GH&nbsp;<span id="clock">--:--:--</span>&nbsp;GMT</div>
+    <nav class="nav__links">
+      <a href="#story"><span data-text="Story">Story</span></a>
+      <a href="#journey"><span data-text="Journey">Journey</span></a>
+      <a href="#receipts"><span data-text="Receipts">Receipts</span></a>
+      <a href="#tour"><span data-text="Tour">Tour</span></a>
+      <a href="#world"><span data-text="World">World</span></a>
+      <a href="#menu"><span data-text="Menu">Menu</span></a>
+      <a href="#work" class="nav__cta"><span data-text="Work with me">Work with me</span></a>
+    </nav>
+    <button class="nav__burger" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="#story">Story</a>
+    <a href="#journey">Journey</a>
+    <a href="#receipts">Receipts</a>
+    <a href="#tour">Tour</a>
+    <a href="#world">World</a>
+    <a href="#menu">Menu</a>
+    <a href="#work"><em>Work with me</em></a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <canvas class="hero__canvas"></canvas>
+      <div class="hero__inner">
+        <div class="hero__meta">
+          <span>Ghanaian Chef &amp; Creator</span>
+          <span>(African Food Tourist)</span>
+          <span>TIME100 Creators &mdash; 2025</span>
+        </div>
+
+        <!-- She stands between the two title lines: "Chef" behind, "Abbys" in front -->
+        <div class="hero__figure">
+          <div class="hero__glow"></div>
+          <img class="hero__img" src="images/hero-abbys.webp" alt="Chef Abbys holding up a cooking pot" />
+          <div class="steam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+
+        <h1 class="hero__title" aria-label="Chef Abbys">
+          <span class="line"><span class="line__inner split">Chef</span></span>
+          <span class="line line--right"><span class="line__inner split serif">Abbys</span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__lead">Taking jollof, waakye, kenkey and banku from Kumasi kitchens to millions of screens around the world.</p>
+          <div class="hero__right">
+          <span class="hero__scroll">Scroll to taste <i></i></span>
+          <a class="hero__badge" href="https://www.tiktok.com/@chefabbys" target="_blank" rel="noopener" data-cursor="Watch">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="ring" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+              <text><textPath href="#ring" textLength="486">Ghana, served to the world &#10042; Watch on TikTok &#10042;</textPath></text>
+            </svg>
+            <span class="hero__play">&#9654;</span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto" id="story" data-nav="dark">
+      <p class="label">(01) &mdash; The Story</p>
+      <p class="manifesto__text">
+        Trained as an engineer. Fluent in <span class="pill"><img src="images/dishes/jollof.jpg" alt="" /></span> jollof.
+        Abena Amoakoa Sintim-Aboagye traded construction sites for cooking pots
+        and built a kitchen <span class="pill"><img src="images/story/chef-whites.jpg" alt="" style="object-position: 50% 12%" /></span> the whole world watches.
+        From Kumasi, she serves Ghana's classics to millions, <span class="pill"><img src="images/story/speed.jpg" alt="" /></span> one pot at a time.
+      </p>
+      <div class="manifesto__foot">
+        <div><strong>Engineer</strong>by profession</div>
+        <div><strong>Chef</strong>by passion</div>
+        <div><strong>@chefabbys</strong>by the millions</div>
+      </div>
+    </section>
+
+    <!-- BANDS -->
+    <section class="bands" aria-hidden="true">
+      <div class="band band--red">
+        <div class="band__track" data-dir="1">
+          <span>Jollof</span><span class="star">&#10042;</span><span class="o">Waakye</span><span class="star">&#10042;</span><span class="s">Kenkey</span><span class="star">&#10042;</span><span>Banku</span><span class="star">&#10042;</span><span class="o">Kelewele</span><span class="star">&#10042;</span><span class="s">Red Red</span><span class="star">&#10042;</span>
+          <span>Jollof</span><span class="star">&#10042;</span><span class="o">Waakye</span><span class="star">&#10042;</span><span class="s">Kenkey</span><span class="star">&#10042;</span><span>Banku</span><span class="star">&#10042;</span><span class="o">Kelewele</span><span class="star">&#10042;</span><span class="s">Red Red</span><span class="star">&#10042;</span>
+        </div>
+      </div>
+      <div class="band band--gold">
+        <div class="band__track" data-dir="-1">
+          <span class="s">Ghana</span><span class="star">&#10042;</span><span>Served</span><span class="star">&#10042;</span><span class="o">To the world</span><span class="star">&#10042;</span><span class="s">Ghana</span><span class="star">&#10042;</span><span>Served</span><span class="star">&#10042;</span><span class="o">To the world</span><span class="star">&#10042;</span>
+          <span class="s">Ghana</span><span class="star">&#10042;</span><span>Served</span><span class="star">&#10042;</span><span class="o">To the world</span><span class="star">&#10042;</span><span class="s">Ghana</span><span class="star">&#10042;</span><span>Served</span><span class="star">&#10042;</span><span class="o">To the world</span><span class="star">&#10042;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY: a photo story, told in scenes -->
+    <section class="story" id="journey">
+      <div class="story__head">
+        <p class="label">(02) &mdash; The Journey</p>
+        <h2 class="split-h">From site plans<br /><em>to supper plans.</em></h2>
+        <p class="story__intro">Eight scenes from a Kumasi kitchen to the world stage. Scroll slowly. Some of it is still simmering.</p>
+      </div>
+
+      <!-- Giant year that rolls over as each scene arrives -->
+      <div class="story__rail" aria-hidden="true">
+        <div class="story__year"><span id="story-year">1999</span></div>
+      </div>
+
+      <article class="scene scene--archive" data-year="Kumasi">
+        <figure class="scene__media">
+          <div class="reveal"><img src="images/story/calabash.jpg" alt="Chef Abbys in a Ghana jersey holding up a calabash" loading="lazy" /></div>
+          <figcaption><span>Kumasi &middot; Ashanti</span><span>Where it starts</span></figcaption>
+        </figure>
+        <div class="scene__text">
+          <span class="scene__num">Scene 01</span>
+          <h3>A Kumasi girl<br /><em>and a pot.</em></h3>
+          <p>Abena Amoakoaa Sintim-Aboagye grew up in Kumasi, in the heart of Ashanti. Wesley Girls' Senior High, then KNUST to study Construction Technology and Management. The plan was buildings. The pull was always the kitchen.</p>
+        </div>
+      </article>
+
+      <article class="scene scene--flip" data-year="2020">
+        <figure class="scene__media">
+          <div class="reveal"><img src="images/story/chef-whites.jpg" alt="Chef Abbys smiling in her chef's jacket in a kitchen" loading="lazy" /></div>
+          <div class="reveal reveal--float"><img src="images/story/kitchen-spread.jpg" alt="Chef Abbys presenting a table of Ghanaian dishes" loading="lazy" /></div>
+          <figcaption><span>Home kitchen</span><span>Snapchat &rarr; TikTok</span></figcaption>
+        </figure>
+        <div class="scene__text">
+          <span class="scene__num">Scene 02</span>
+          <h3>The lockdown<br /><em>pot.</em></h3>
+          <p>Stuck at home during the pandemic, she filmed what she cooked. First on Snapchat, then TikTok and YouTube. No studio and no crew, just a phone, a pot and Ghana's classics.</p>
+          <blockquote class="scene__quote">&ldquo;I love to teach people how to cook, so I made it a profession.&rdquo;</blockquote>
+        </div>
+      </article>
+
+      <article class="scene" data-year="2024">
+        <figure class="scene__media">
+          <div class="reveal"><img src="images/story/kenkey-market.jpg" alt="Chef Abbys teaching comedian Michael Dapaah to wrap kenkey at a market" loading="lazy" /></div>
+          <div class="reveal reveal--float"><img src="images/story/kenkey-plate.jpg" alt="Kenkey with fried fish, avocado and egg" loading="lazy" /></div>
+          <figcaption><span>Accra &middot; the market</span><span>Kenkey with Michael Dapaah</span></figcaption>
+        </figure>
+        <div class="scene__text">
+          <span class="scene__num">Scene 03</span>
+          <h3>Food becomes<br /><em>a language.</em></h3>
+          <p>Waakye, kenkey, jollof and banku became short films about who eats them and why. She took the camera to the markets and taught visitors, Michael Dapaah among them, to wrap kenkey by hand. In 2024 she was nominated for Food Creator of the Year at the Creator Awards.</p>
+        </div>
+      </article>
+
+      <article class="scene scene--flip" data-year="2025">
+        <figure class="scene__media">
+          <div class="reveal"><img src="images/story/cannes.jpg" alt="Chef Abbys with TikTok CEO Shou Zi Chew at Cannes Lions" loading="lazy" /></div>
+          <figcaption><span>Cannes &middot; France</span><span>With Shou Zi Chew</span></figcaption>
+        </figure>
+        <div class="scene__text">
+          <span class="scene__num">Scene 04</span>
+          <h3>Accra<br /><em>to Cannes.</em></h3>
+          <p>The only African creator in TikTok's delegation to Cannes Lions, with a private dinner with CEO Shou Zi Chew. She used her seat to ask how African creators get into the global conversation. A month later, TIME named her to its first TIME100 Creators list.</p>
+          <blockquote class="scene__quote">&ldquo;Storytelling has no borders.&rdquo;</blockquote>
+        </div>
+      </article>
+
+      <!-- No photo here on purpose: the menu is the picture -->
+      <article class="scene scene--menu" data-year="2025">
+        <div class="royal">
+          <p class="royal__top">British High Commissioner's Residence &middot; Accra</p>
+          <p class="royal__title">The King's<br /><em>Birthday Menu</em></p>
+          <p class="royal__sub">Ghana &times; Britain, by Chef Abbys</p>
+          <ul class="royal__list">
+            <li><span>Waakye Wrap</span><i></i><small>GH</small></li>
+            <li><span>Scotch ne Meko</span><i></i><small>GH &times; UK</small></li>
+            <li><span>Farmers Cup</span><i></i><small>plantain &amp; mushroom</small></li>
+            <li><span>Loaded Yam</span><i></i><small>GH</small></li>
+            <li><span>Bangers &amp; Mash</span><i></i><small>UK</small></li>
+            <li><span>Fante Fante Gnocchi</span><i></i><small>GH &times; IT</small></li>
+            <li class="is-star"><span>Sobolo Cheesecake</span><i></i><small>the one everyone asked about</small></li>
+          </ul>
+          <span class="royal__seal">CA</span>
+        </div>
+        <div class="scene__text">
+          <span class="scene__num">Scene 05</span>
+          <h3>A menu<br /><em>for a King.</em></h3>
+          <p>Official culinary partner for King Charles III's birthday reception in Accra. She worked with the Residence's chef on a Ghana and Britain fusion menu. She also hosted London mayor Sadiq Khan for a private dinner on his visit to Ghana.</p>
+        </div>
+      </article>
+
+      <article class="scene" data-year="2026">
+        <figure class="scene__media">
+          <div class="reveal"><img src="images/story/uk-flight.jpg" alt="Chef Abbys smiling in a business class seat on the way to the UK" loading="lazy" /></div>
+          <div class="reveal reveal--float"><img src="images/story/diaspora.jpg" alt="Chef Abbys receiving a letter at the Office of Diaspora Affairs" loading="lazy" /></div>
+          <figcaption><span>Accra &rarr; London</span><span>May 2026</span></figcaption>
+        </figure>
+        <div class="scene__text">
+          <span class="scene__num">Scene 06</span>
+          <h3>Ghana<br /><em>on the road.</em></h3>
+          <p>It started in January with IShowSpeed, live from Ghana, introducing him to kosua ne meko. Then a 25-day, 12-region tour for Heritage Month, an appointment with the Office of Diaspora Affairs and, in May, a UK food tour cooking with London's food creators.</p>
+        </div>
+      </article>
+
+      <article class="scene scene--flip" data-year="2026">
+        <figure class="scene__media">
+          <div class="reveal"><img src="images/story/dakar-1.jpg" alt="Chef Abbys arriving at Dakar airport beside a pillar wrapped in the Senegal flag" loading="lazy" /></div>
+          <figcaption><span>Dakar &middot; Senegal</span><span>Stop 03 &middot; Sept 2026</span></figcaption>
+        </figure>
+        <div class="scene__text">
+          <span class="scene__num">Scene 07</span>
+          <h3>Listen. Learn.<br /><em>Connect. Share.</em></h3>
+          <p>The West Africa Food Tour began in August 2026: Togo, then Benin's markets, then Senegal. Home kitchens, street food and indigenous ingredients, filmed to get Africans travelling Africa through its food.</p>
+          <blockquote class="scene__quote">&ldquo;I'm here to listen, learn, connect, and share.&rdquo;</blockquote>
+        </div>
+      </article>
+
+      <article class="scene scene--feast" data-year="16.10">
+        <div class="feast">
+          <p class="feast__date">16 October &middot; World Food Day</p>
+          <p class="feast__big"><span data-to="50" data-suffix="K">0</span><small>plates, one day</small></p>
+          <p class="feast__line">Accra &amp; Kumasi</p>
+        </div>
+        <div class="scene__text">
+          <span class="scene__num">Scene 08</span>
+          <h3>The whole family<br /><em>packs the boxes.</em></h3>
+          <p>The first Big Street Feast in 2025 fed Accra's streets for free, three meals across the day for more than 15,000 people. For the second, she aimed for 50,000 across two cities and asked everyone to pitch in. On the eve of the feast she posted a video of her 78-year-old father in the kitchen, quietly packing food boxes.</p>
+        </div>
+      </article>
+
+      <blockquote class="journey__quote">
+        <p>&ldquo;When you cook a country's traditional food, you learn its values, its struggles, and its soul.&rdquo;</p>
+        <cite>Chef Abbys, to TIME</cite>
+      </blockquote>
+    </section>
+
+    <!-- FACES: a drifting strip of photos -->
+    <section class="faces" aria-label="Photos of Chef Abbys">
+      <div class="faces__head">
+        <p class="label">(&mdash;) Off the pot</p>
+        <p class="faces__note">Engineer, chef, host, traveller, daughter.</p>
+      </div>
+      <div class="faces__track">
+        <figure class="face"><img src="images/story/kente-pot.jpg" alt="Chef Abbys in kente with a silver cooking pot" loading="lazy" /><figcaption>Heritage shoot</figcaption></figure>
+        <figure class="face"><img src="images/story/dakar-2.jpg" alt="Chef Abbys at Dakar airport" loading="lazy" /><figcaption>Dakar, 2026</figcaption></figure>
+        <figure class="face"><img src="images/story/glam-pink.jpg" alt="Chef Abbys in a pink beaded dress" loading="lazy" /><figcaption>Dressed up</figcaption></figure>
+        <figure class="face"><img src="images/story/uk-arrival.jpg" alt="Chef Abbys arriving at a London airport" loading="lazy" /><figcaption>London, 2026</figcaption></figure>
+        <figure class="face"><img src="images/story/kitchen-spread.jpg" alt="Chef Abbys with a spread of Ghanaian dishes" loading="lazy" /><figcaption>The classics</figcaption></figure>
+        <figure class="face"><img src="images/story/dakar-3.jpg" alt="Chef Abbys with her suitcase in Dakar" loading="lazy" /><figcaption>Stop 03</figcaption></figure>
+        <figure class="face"><img src="images/story/calabash.jpg" alt="Chef Abbys in a Ghana jersey" loading="lazy" /><figcaption>Black Star</figcaption></figure>
+        <!-- The strip ends where it began: full circle -->
+        <figure class="face face--echo"><img src="images/story/kente-pot.jpg" alt="" loading="lazy" /><figcaption>Heritage shoot</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- SHELF: the awards, framed like a hall of fame -->
+    <section class="shelf" id="impact" data-nav="dark">
+      <div class="shelf__head">
+        <div>
+          <p class="label">(03) &mdash; The trophy shelf</p>
+          <h2 class="split-h">Ghana noticed.<br /><em>Then the world did.</em></h2>
+        </div>
+        <p class="shelf__note">&ldquo;We have won 7 awards so far this year.&rdquo;<span>Chef Abbys &middot; December 2025</span></p>
+      </div>
+
+      <!-- Medals are drawn from the data attributes in script.js -->
+      <ul class="shelf__grid">
+        <li class="award award--feature" data-ring="TIME &middot; 100 Creators &middot; TIME &middot; 100 Creators &middot;" data-mark="100" data-tone="red">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>TIME100 Creators</h3><p>TIME &middot; the inaugural list</p></div>
+          <div class="award__meta"><span class="award__status">Honoree</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="Pulse Awards &middot; Pulse Awards &middot;" data-mark="P" data-tone="gold">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>Food Creator of the Year</h3><p>Pulse</p></div>
+          <div class="award__meta"><span class="award__status">Won</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="Pulse Awards &middot; Pulse Awards &middot;" data-mark="P" data-tone="gold">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>Most Innovative Creator</h3><p>Pulse</p></div>
+          <div class="award__meta"><span class="award__status">Won</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="Pulse Awards &middot; Pulse Awards &middot;" data-mark="P" data-tone="gold">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>TikTok Creator of the Year</h3><p>Pulse</p></div>
+          <div class="award__meta"><span class="award__status">Won</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="YEN Awards &middot; YEN Awards &middot;" data-mark="Y" data-tone="green">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>TikTok Creator of the Year</h3><p>YEN.com.gh</p></div>
+          <div class="award__meta"><span class="award__status">Won</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="Women's Choice &middot; Ghana &middot;" data-mark="W" data-tone="plum">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>Young Star of the Year</h3><p>Women's Choice Awards Ghana</p></div>
+          <div class="award__meta"><span class="award__status">Won</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="TikTok Awards &middot; Sub-Saharan Africa &middot;" data-mark="T" data-tone="ink">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>Food Creator of the Year</h3><p>TikTok Awards Sub-Saharan Africa</p></div>
+          <div class="award__meta"><span class="award__status award__status--alt">Runner-up</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="TikTok &middot; Discover List &middot;" data-mark="D" data-tone="ink">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>Discover List</h3><p>TikTok &middot; one of six African creators</p></div>
+          <div class="award__meta"><span class="award__status award__status--alt">Selected</span><b>2025</b></div>
+        </li>
+        <li class="award" data-ring="Creator Awards &middot; Creator Awards &middot;" data-mark="C" data-tone="stone">
+          <div class="award__medal"></div>
+          <div class="award__info"><h3>Food Creator of the Year</h3><p>Creator Awards</p></div>
+          <div class="award__meta"><span class="award__status award__status--alt">Nominated</span><b>2024</b></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- RECEIPTS: who's been at her table (horizontal scroll) -->
+    <section class="receipts" id="receipts">
+      <div class="receipts__track">
+        <div class="panel panel--intro">
+          <p class="label">(04) &mdash; The Receipts</p>
+          <h2 class="split-h">Guess who's<br /><em>coming to dinner.</em></h2>
+          <p class="panel__hint">Keep scrolling &rarr;</p>
+        </div>
+
+        <article class="panel guest guest--red">
+          <span class="panel__big">Chew</span>
+          <figure class="guest__media guest__photo"><img src="images/story/cannes.jpg" alt="Chef Abbys with TikTok CEO Shou Zi Chew at Cannes Lions" loading="lazy" /><figcaption>Cannes Lions, 2025</figcaption></figure>
+          <div class="panel__body">
+            <p class="panel__kicker">Table 01 &middot; CEO, TikTok</p>
+            <h3>Shou<br /><em>Zi Chew</em></h3>
+            <p>A private dinner at Cannes, where she asked how African creators get a seat at the global table. He now follows her on TikTok, the first Ghanaian on his list.</p>
+          </div>
+        </article>
+
+        <article class="panel guest guest--cream">
+          <span class="panel__big">Doku</span>
+          <figure class="guest__media guest__photo"><img src="images/story/doku.jpg" alt="Chef Abbys serving waakye to Jeremy Doku" loading="lazy" /><figcaption>Accra, 2025</figcaption></figure>
+          <div class="panel__body">
+            <p class="panel__kicker">Table 02 &middot; Manchester City</p>
+            <h3>Jeremy<br /><em>Doku</em></h3>
+            <p>His first trip to Ghana in 17 years, with the whole family at the table and everything served in earthenware bowls.</p>
+            <p class="guest__served"><span>On the plate</span>Waakye &amp; samosas</p>
+          </div>
+        </article>
+
+        <article class="panel guest guest--gold">
+          <span class="panel__big">Speed</span>
+          <figure class="guest__media guest__photo"><img src="images/story/speed.jpg" alt="Chef Abbys beside IShowSpeed in a crowd at Independence Square, Accra" loading="lazy" /><figcaption>Independence Square, Accra &middot; Jan 2026</figcaption></figure>
+          <div class="panel__body">
+            <p class="panel__kicker">Table 03 &middot; Speed Does Africa</p>
+            <h3>I<em>Show</em>Speed</h3>
+            <p>Live from Accra on his Africa tour, in front of millions. She handed him a Ghanaian street classic, no ceremony.</p>
+            <p class="guest__served"><span>On the plate</span>Kosua ne meko: boiled egg &amp; pepper</p>
+          </div>
+        </article>
+
+        <article class="panel guest guest--green">
+          <span class="panel__big">Khan</span>
+          <figure class="guest__media guest__photo"><img src="images/story/sadiq.jpg" alt="Chef Abbys watching Sadiq Khan grind in an asanka in her kitchen" loading="lazy" /><figcaption>Ghana &middot; in her kitchen</figcaption></figure>
+          <div class="panel__body">
+            <p class="panel__kicker">Table 04 &middot; Mayor of London</p>
+            <h3>Sadiq<br /><em>Khan</em></h3>
+            <p>On his visit to Ghana he didn't just eat. She handed him the tapoli and put him to work at the asanka. A year later she was cooking in Trafalgar Square at Black On The Square.</p>
+            <p class="guest__served"><span>On the plate</span>A private dinner, cooked together</p>
+          </div>
+        </article>
+
+        <article class="panel guest guest--ink">
+          <span class="panel__big">Kenkey</span>
+          <figure class="guest__media guest__photo"><img src="images/story/kenkey-market.jpg" alt="Chef Abbys teaching Michael Dapaah to wrap kenkey" loading="lazy" /><figcaption>Accra, the market</figcaption></figure>
+          <div class="panel__body">
+            <p class="panel__kicker">Table 05 &middot; Comedian</p>
+            <h3>Michael<br /><em>Dapaah</em></h3>
+            <p>She sat him down at a market stall and taught him to wrap Ga kenkey by hand, husk by husk.</p>
+            <p class="guest__served"><span>On the plate</span>Ga kenkey</p>
+          </div>
+        </article>
+
+        <article class="panel guest guest--cream">
+          <span class="panel__big">Royal</span>
+          <figure class="guest__media guest__photo"><img src="images/story/kings-birthday.jpg" alt="Chef Abbys smiling beside a guest wearing a kente stole at the King's birthday reception" loading="lazy" /><figcaption>The King's birthday reception, Accra &middot; 2025</figcaption></figure>
+          <div class="panel__body">
+            <p class="panel__kicker">Table 06 &middot; British High Commission, Accra</p>
+            <h3>The King's<br /><em>birthday</em></h3>
+            <p>Culinary partner for the reception marking King Charles III's birthday. The dessert everyone asked about was made with hibiscus.</p>
+            <p class="guest__served"><span>On the plate</span>Sobolo cheesecake</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TOUR: the road across a real map of Ghana -->
+    <section class="tour" id="tour">
+      <div class="tour__pin">
+        <div class="tour__head">
+          <div>
+            <p class="label">(05) &mdash; Heritage Month &middot; March 2026</p>
+            <h2 class="split-h">One chef.<br /><em>One country.</em></h2>
+          </div>
+          <div class="tour__day"><span>Day</span><strong id="day">01</strong><small>of 25</small></div>
+        </div>
+
+        <div class="tour__stage">
+          <div class="tour__stops">
+            <article class="stop is-active">
+              <p class="stop__kicker"><b>01</b> Greater Accra</p>
+              <h3>Accra<em>where the road begins.</em></h3>
+              <p class="stop__quote">&ldquo;Food is not just something we eat, it's something we inherit.&rdquo;</p>
+            </article>
+            <article class="stop">
+              <p class="stop__kicker"><b>02</b> Eastern Region</p>
+              <h3>The hills<em>and the mountains.</em></h3>
+              <p class="stop__text">Pop-up cooking demos in every region, cooking each dish where it comes from, with the people who grew up on it.</p>
+            </article>
+            <article class="stop">
+              <p class="stop__kicker"><b>03</b> Central Region</p>
+              <h3>The coast<em>and the castles.</em></h3>
+              <p class="stop__text">Fishing towns and heritage sites, where the history of the coast is still in the food.</p>
+            </article>
+            <article class="stop">
+              <p class="stop__kicker"><b>04</b> Ashanti Region</p>
+              <h3>The forests<em>and home.</em></h3>
+              <p class="stop__quote">&ldquo;People can feel when something is real.&rdquo;</p>
+            </article>
+            <article class="stop">
+              <p class="stop__kicker"><b>05</b> Northern Region</p>
+              <h3>The markets<em>up north.</em></h3>
+              <p class="stop__quote">&ldquo;I was shocked at how affordable their market prices were.&rdquo;</p>
+            </article>
+            <article class="stop">
+              <p class="stop__kicker"><b>06</b> Upper East Region</p>
+              <h3>The savannah<em>at the top.</em></h3>
+              <p class="stop__quote">&ldquo;This wasn't staged or forced, it was lived.&rdquo;</p>
+            </article>
+            <article class="stop stop--end">
+              <p class="stop__kicker"><b>25</b> Days later</p>
+              <h3>12 regions.<em>History in motion.</em></h3>
+              <p class="stop__text">Communities, markets and heritage sites across 12 of Ghana's 16 regions, filmed as 24 videos that went past 100 million views.</p>
+            </article>
+          </div>
+
+          <div class="tour__map">
+            <svg class="gh" viewBox="0 0 600 800" preserveAspectRatio="xMinYMid meet" aria-hidden="true">
+              <defs>
+                <pattern id="gh-dots" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="5.5" cy="5.5" r="1.7" fill="rgba(246,237,220,.2)" /></pattern>
+              </defs>
+              <path class="gh__land" fill="url(#gh-dots)" />
+              <path class="gh__edge" />
+              <path class="road-base" />
+              <path class="road-draw" />
+              <g class="gh__pins"></g>
+              <circle class="road-glow" r="22" />
+              <circle class="road-dot" r="8" />
+            </svg>
+            <figure class="tphoto tphoto--a" data-stop="4"><figcaption>Northern Ghana, 2026</figcaption><img src="images/story/tour-2.jpg" alt="Chef Abbys sitting with an elder woman beside a bowl of fish" loading="lazy" /></figure>
+            <figure class="tphoto tphoto--b" data-stop="5"><figcaption>Northern Ghana, 2026</figcaption><img src="images/story/tour-1.jpg" alt="Chef Abbys pounding in a wooden mortar in a village" loading="lazy" /></figure>
+            <figure class="tphoto tphoto--c" data-stop="6"><figcaption>Heritage Month, 2026</figcaption><img src="images/story/tour-3.jpg" alt="Chef Abbys holding a calabash in front of a whitewashed mud mosque" loading="lazy" /></figure>
+          </div>
+        </div>
+
+        <div class="tour__stats">
+          <div class="tstat"><strong data-to="25">0</strong><span>days on the road</span></div>
+          <div class="tstat"><strong data-to="12">0</strong><span>regions visited</span></div>
+          <div class="tstat"><strong data-to="24">0</strong><span>videos published</span></div>
+          <div class="tstat"><strong data-to="100" data-prefix="~" data-suffix="M">0</strong><span>views and counting</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PASSPORT (animated world map) -->
+    <section class="passport" id="world">
+      <div class="passport__pin">
+        <!-- The dots are painted once into canvases and moved with the camera on the GPU -->
+        <div class="dotmap" aria-hidden="true"></div>
+        <svg class="map" aria-hidden="true">
+          <defs>
+            <mask id="wa-mask" maskUnits="userSpaceOnUse" x="-4000" y="-4000" width="10000" height="10000">
+              <g class="wa-mask"></g>
+            </mask>
+          </defs>
+          <g class="cam">
+            <g class="arcs"></g>
+            <g class="arcs-wa" mask="url(#wa-mask)"></g>
+            <g class="pins"></g>
+            <g class="planes"></g>
+          </g>
+        </svg>
+
+        <div class="passport__head">
+          <p class="label">(06) &mdash; Passport</p>
+          <h2 class="split-h">Where the pot<br /><em>has travelled.</em></h2>
+        </div>
+
+        <div class="passport__cards">
+          <article class="pass" data-status="home">
+            <div class="pass__top"><span>Stop 01 / 05</span><span>Home base</span></div>
+            <div class="pass__route pass__route--home">
+              <div class="pass__code"><small>Origin</small><strong>KMS</strong><span>Kumasi, Ghana</span></div>
+              <div class="pass__code pass__code--to"><small>Coordinates</small><span class="pass__coords">6.69&deg;N<br />1.62&deg;W</span></div>
+            </div>
+            <div class="pass__info">
+              <h3>Where it started</h3>
+              <p class="pass__where">Kumasi &middot; Ghana</p>
+              <p>A campus food hustle turned into one of Africa's most-watched kitchens, and a 25-day tour of 12 regions.</p>
+            </div>
+            <div class="pass__foot"><span class="pass__tag">Home</span><span class="pass__barcode"></span></div>
+            <div class="pass__stamp"><span>Akwaaba</span><small>Welcome home</small></div>
+          </article>
+
+          <article class="pass" data-status="visited">
+            <div class="pass__top"><span>Stop 02 / 05</span><span>Boarding pass</span></div>
+            <div class="pass__route">
+              <div class="pass__code"><small>From</small><strong>ACC</strong><span>Accra</span></div>
+              <div class="pass__line"><i></i><svg class="pass__plane" viewBox="-9 -9 18 18"><path d="M0,-7 L1.6,-2 L7.5,1.5 L7.5,3 L1.6,1.6 L1.2,5.4 L3.2,7 L3.2,8 L0,7.1 L-3.2,8 L-3.2,7 L-1.2,5.4 L-1.6,1.6 L-7.5,3 L-7.5,1.5 L-1.6,-2 Z" /></svg><i></i></div>
+              <div class="pass__code pass__code--to"><small>To</small><strong>NCE</strong><span>C&ocirc;te d'Azur</span></div>
+            </div>
+            <div class="pass__info">
+              <h3>Cannes Lions</h3>
+              <p class="pass__where">Cannes &middot; France</p>
+              <p>The only African creator in TikTok's global creator delegation, where she met CEO Shou Zi Chew.</p>
+            </div>
+            <div class="pass__foot"><span class="pass__tag">Visited</span><span class="pass__barcode"></span></div>
+            <div class="pass__stamp"><span>Admitted</span><small>Chef Abbys</small></div>
+          </article>
+
+          <article class="pass" data-status="visited">
+            <div class="pass__top"><span>Stop 03 / 05</span><span>Boarding pass</span></div>
+            <div class="pass__route">
+              <div class="pass__code"><small>From</small><strong>ACC</strong><span>Accra</span></div>
+              <div class="pass__line"><i></i><svg class="pass__plane" viewBox="-9 -9 18 18"><path d="M0,-7 L1.6,-2 L7.5,1.5 L7.5,3 L1.6,1.6 L1.2,5.4 L3.2,7 L3.2,8 L0,7.1 L-3.2,8 L-3.2,7 L-1.2,5.4 L-1.6,1.6 L-7.5,3 L-7.5,1.5 L-1.6,-2 Z" /></svg><i></i></div>
+              <div class="pass__code pass__code--to"><small>To</small><strong>LON</strong><span>United Kingdom</span></div>
+            </div>
+            <div class="pass__info">
+              <h3>UK Food Tour</h3>
+              <p class="pass__where">United Kingdom</p>
+              <p>Took the kitchen on the road across the UK. She flew business class, of course.</p>
+            </div>
+            <div class="pass__foot"><span class="pass__tag">Visited</span><span class="pass__barcode"></span></div>
+            <div class="pass__stamp"><span>Admitted</span><small>Chef Abbys</small></div>
+          </article>
+
+          <article class="pass" data-status="visited">
+            <div class="pass__top"><span>Stop 04 / 05</span><span>Boarding pass</span></div>
+            <div class="pass__route">
+              <div class="pass__code"><small>From</small><strong>ACC</strong><span>Accra</span></div>
+              <div class="pass__line"><i></i><svg class="pass__plane" viewBox="-9 -9 18 18"><path d="M0,-7 L1.6,-2 L7.5,1.5 L7.5,3 L1.6,1.6 L1.2,5.4 L3.2,7 L3.2,8 L0,7.1 L-3.2,8 L-3.2,7 L-1.2,5.4 L-1.6,1.6 L-7.5,3 L-7.5,1.5 L-1.6,-2 Z" /></svg><i></i></div>
+              <div class="pass__code pass__code--to"><small>To</small><strong>AUH</strong><span>Abu Dhabi</span></div>
+            </div>
+            <div class="pass__info">
+              <h3>Bridge Summit</h3>
+              <p class="pass__where">Abu Dhabi &middot; UAE</p>
+              <p>Took the stage to represent Ghana at a global media summit.</p>
+            </div>
+            <div class="pass__foot"><span class="pass__tag">Visited</span><span class="pass__barcode"></span></div>
+            <div class="pass__stamp"><span>Admitted</span><small>Chef Abbys</small></div>
+          </article>
+
+          <article class="pass" data-status="announced">
+            <div class="pass__top"><span>Stop 05 / 05</span><span>On the road</span></div>
+            <div class="pass__route">
+              <div class="pass__code"><small>From</small><strong>ACC</strong><span>Accra</span></div>
+              <div class="pass__line"><i></i><svg class="pass__plane" viewBox="-9 -9 18 18"><path d="M0,-7 L1.6,-2 L7.5,1.5 L7.5,3 L1.6,1.6 L1.2,5.4 L3.2,7 L3.2,8 L0,7.1 L-3.2,8 L-3.2,7 L-1.2,5.4 L-1.6,1.6 L-7.5,3 L-7.5,1.5 L-1.6,-2 Z" /></svg><i></i></div>
+              <div class="pass__code pass__code--to"><small>To</small><strong>&times;3</strong><span>West Africa</span></div>
+            </div>
+            <div class="pass__info">
+              <h3>West Africa Food Tour</h3>
+              <p class="pass__where">TG &middot; BJ &middot; SN &middot; and counting</p>
+              <p>On the road since August 2026: Togo, then Benin, then Senegal so far, cooking with local food creators along the way.</p>
+            </div>
+            <div class="pass__foot"><span class="pass__tag">On the road</span><span class="pass__barcode"></span></div>
+            <div class="pass__stamp"><span>Underway</span><small>Since Aug 2026</small></div>
+          </article>
+        </div>
+
+        <div class="passport__hud">
+          <span>Flight log</span>
+          <div class="hud__bar"><i></i></div>
+          <span class="hud__count"><b id="hud-count">0</b> countries stamped</span>
+        </div>
+
+        <div class="passport__finale">
+          <div><strong>6</strong><span>countries abroad</span></div>
+          <div><strong>3</strong><span>continents</span></div>
+          <div><strong>1</strong><span>tour still on the road</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU: a pinned plate on the left, the dishes scroll past on the right -->
+    <section class="menu-sec" id="menu" data-nav="dark">
+      <div class="menu-sec__head">
+        <div>
+          <p class="label">(07) &mdash; On the menu</p>
+          <h2 class="split-h">The <em>classics.</em></h2>
+        </div>
+        <p class="menu-sec__note">Five dishes Ghana grew up on, and the ones she keeps cooking for the world.</p>
+      </div>
+
+      <div class="menu-sec__body">
+        <div class="plate-frame" aria-hidden="true">
+          <div class="plate-frame__stack">
+            <img src="images/dishes/jollof.jpg" alt="" class="is-on" />
+            <img src="images/dishes/waakye.jpg" alt="" loading="lazy" />
+            <img src="images/dishes/kenkey.jpg" alt="" loading="lazy" />
+            <img src="images/dishes/banku.jpg" alt="" loading="lazy" />
+            <img src="images/dishes/kelewele.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="plate-frame__bar"><span id="dish-count">01</span> / 05<i><b></b></i></div>
+        </div>
+
+        <ol class="dishes">
+          <li class="dish">
+            <img class="dish__img" src="images/dishes/jollof.jpg" alt="Ghana jollof rice with chicken and salad" loading="lazy" />
+            <p class="dish__tag">01 &middot; One-pot rice &middot; Everywhere</p>
+            <h3 class="dish__name">Jollof</h3>
+            <p class="dish__desc">Rice cooked down in tomato, pepper and onion until every grain is red and a little smoky at the bottom of the pot. West Africa argues about it. Ghana is certain.</p>
+            <p class="dish__note"><span>Her pick</span>The meal she comes home to after every trip.</p>
+            <p class="dish__with"><span>Eat it with</span><b>Fried chicken</b><b>Shito</b><b>Salad</b></p>
+          </li>
+          <li class="dish">
+            <img class="dish__img" src="images/dishes/waakye.jpg" alt="A plate of waakye with egg, spaghetti and salad" loading="lazy" />
+            <p class="dish__tag">02 &middot; Rice &amp; beans &middot; Northern roots</p>
+            <h3 class="dish__name">Waakye</h3>
+            <p class="dish__desc">Rice and beans cooked with dried sorghum leaves, which give it that deep wine colour. Bought in the morning, wrapped in a leaf, and piled with everything the seller has.</p>
+            <p class="dish__note"><span>Her pick</span>&ldquo;Everyone will love it.&rdquo; The dish she recommends first.</p>
+            <p class="dish__with"><span>Eat it with</span><b>Shito</b><b>Gari</b><b>Spaghetti</b><b>Egg</b><b>Wele</b></p>
+          </li>
+          <li class="dish">
+            <img class="dish__img" src="images/dishes/kenkey.jpg" alt="Kenkey with fried fish, sardines and shito" loading="lazy" />
+            <p class="dish__tag">03 &middot; Fermented corn &middot; The coast</p>
+            <h3 class="dish__name">Kenkey</h3>
+            <p class="dish__desc">Fermented corn dough wrapped in husks and boiled until firm and sour. Ga kenkey in corn husk, Fante kenkey in plantain leaf. The one she taught Michael Dapaah to wrap.</p>
+            <p class="dish__with"><span>Eat it with</span><b>Fried fish</b><b>Fresh pepper</b><b>Shito</b></p>
+          </li>
+          <li class="dish">
+            <img class="dish__img" src="images/dishes/banku.jpg" alt="Banku in okro stew" loading="lazy" />
+            <p class="dish__tag">04 &middot; Corn &amp; cassava &middot; Volta &amp; Accra</p>
+            <h3 class="dish__name">Banku</h3>
+            <p class="dish__desc">Fermented corn and cassava dough stirred over the fire until smooth and stretchy, then shaped by hand. Eaten with your fingers, always.</p>
+            <p class="dish__with"><span>Eat it with</span><b>Okro stew</b><b>Grilled tilapia</b><b>Pepper</b></p>
+          </li>
+          <li class="dish">
+            <img class="dish__img" src="images/dishes/kelewele.jpg" alt="Spiced fried plantain, kelewele" loading="lazy" />
+            <p class="dish__tag">05 &middot; Street food &middot; After dark</p>
+            <h3 class="dish__name">Kelewele</h3>
+            <p class="dish__desc">Ripe plantain cut into cubes, tossed in ginger, chilli and spice, and fried until the edges catch. Sold hot from roadside pans once the sun goes down.</p>
+            <p class="dish__with"><span>Eat it with</span><b>Roasted groundnuts</b></p>
+          </li>
+        </ol>
+      </div>
+
+      <p class="menu-sec__credit">Dish photos via Wikimedia Commons (CC BY-SA 4.0): Queen Murja10, Xibitgh, Afimaame, Edithobayaa1.</p>
+    </section>
+
+    <!-- COLLABS -->
+    <div class="collabs" aria-label="Partners and collaborations">
+      <div class="collabs__track">
+        <span>Kivo &middot; Procus Ghana</span><span class="star">&#10042;</span><span><em>Office of Diaspora Affairs</em></span><span class="star">&#10042;</span><span>TikTok</span><span class="star">&#10042;</span><span><em>TIME</em></span><span class="star">&#10042;</span>
+        <span>Kivo &middot; Procus Ghana</span><span class="star">&#10042;</span><span><em>Office of Diaspora Affairs</em></span><span class="star">&#10042;</span><span>TikTok</span><span class="star">&#10042;</span><span><em>TIME</em></span><span class="star">&#10042;</span>
+      </div>
+    </div>
+
+    <!-- WORK WITH ME -->
+    <section class="work" id="work">
+      <div class="work__head">
+        <p class="label">(08) &mdash; Work with me</p>
+        <h2 class="split-h">Let's tell <em>your</em> story<br />through food.</h2>
+      </div>
+
+      <div class="offers">
+        <article class="offer">
+          <img src="images/story/kitchen-spread.jpg" alt="Chef Abbys presenting a spread of Ghanaian dishes" loading="lazy" />
+          <span class="offer__num">01</span>
+          <div class="offer__body">
+            <h3>Brand<br /><em>partnerships</em></h3>
+            <p>Ambassadorships and campaigns that reach a huge, loyal audience across Ghana and the diaspora.</p>
+          </div>
+        </article>
+        <article class="offer">
+          <img src="images/story/glam-pink.jpg" alt="Chef Abbys dressed for an evening event" loading="lazy" />
+          <span class="offer__num">02</span>
+          <div class="offer__body">
+            <h3>Events &amp;<br /><em>speaking</em></h3>
+            <p>Keynotes, panels and live cooking on African food, culture and the creator economy.</p>
+          </div>
+        </article>
+        <article class="offer">
+          <img src="images/story/chef-whites.jpg" alt="Chef Abbys in her chef's jacket in the kitchen" loading="lazy" />
+          <span class="offer__num">03</span>
+          <div class="offer__body">
+            <h3>Content &amp;<br /><em>recipes</em></h3>
+            <p>Recipe development and short-form video that puts your product in a real Ghanaian kitchen.</p>
+          </div>
+        </article>
+        <article class="offer">
+          <img src="images/story/tour-3.jpg" alt="Chef Abbys in front of a mud mosque in northern Ghana" loading="lazy" />
+          <span class="offer__num">04</span>
+          <div class="offer__body">
+            <h3>Food<br /><em>tourism</em></h3>
+            <p>Destination and heritage campaigns that show off Ghana's regions, markets and cooks.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="work__grid">
+        <figure class="work__portrait">
+          <img src="images/story/kente-pot.jpg" alt="Chef Abbys in kente holding a silver cooking pot" loading="lazy" />
+          <figcaption><span>From Kumasi</span><span>Cooking everywhere</span></figcaption>
+        </figure>
+
+        <div class="work__form">
+          <p class="work__lead">Pull up a chair. Tell me what you're cooking up, and I'll bring the pot.</p>
+          <form class="form" id="contact-form">
+            <div class="field"><input id="f-name" name="name" placeholder=" " required /><label for="f-name">Your name</label></div>
+            <div class="field"><input id="f-email" name="email" type="email" placeholder=" " required /><label for="f-email">Email</label></div>
+            <div class="field"><input id="f-org" name="org" placeholder=" " /><label for="f-org">Brand / Organisation</label></div>
+            <div class="field field--static">
+              <select id="f-type" name="type">
+                <option>Brand partnership</option>
+                <option>Event or speaking</option>
+                <option>Content &amp; recipes</option>
+                <option>Food tourism</option>
+                <option>Media &amp; press</option>
+              </select>
+              <label for="f-type">What are we cooking?</label>
+            </div>
+            <div class="field"><textarea id="f-msg" name="message" rows="3" placeholder=" " required></textarea><label for="f-msg">Tell me about it</label></div>
+            <div class="form__end">
+              <button type="submit" class="btn-mag magnetic" data-cursor="Send"><span>Send it</span></button>
+              <p class="form__note" id="form-note" role="status"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <span>Bookings &amp; press</span>
+      <div class="footer__links">
+        <a href="https://www.tiktok.com/@chefabbys" target="_blank" rel="noopener">TikTok &nearr;</a>
+        <a href="https://www.youtube.com/@chefabbys" target="_blank" rel="noopener">YouTube &nearr;</a>
+        <a href="https://www.instagram.com/chefabbys/" target="_blank" rel="noopener">Instagram &nearr;</a>
+      </div>
+    </div>
+    <a href="#work" class="footer__big" aria-label="Let's cook">
+      <span class="split">Let's</span> <em class="split">cook.</em>
+    </a>
+    <div class="footer__bottom">
+      <span>&copy; <span id="year"></span> Chef Abbys</span>
+      <span>Ghana, served to the world</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
