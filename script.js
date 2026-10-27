@@ -306,6 +306,20 @@ if (!reduce) {
   });
 }
 
+// Pins must be created in page order: each one's height shifts every trigger below it
+/* ---------- Faces: the photo strip drifts with the scroll ---------- */
+(() => {
+  const track = $(".faces__track");
+  if (!track || reduce) return;
+  // Starts with the first photo at the left gutter and stops with its twin at the right gutter
+  const gutter = () => parseFloat(getComputedStyle($(".faces__head")).paddingLeft) || 16;
+  gsap.fromTo(track, { x: gutter }, {
+    x: () => -(track.scrollWidth - innerWidth + gutter()), ease: "none",
+    // Pinned, so both ends are actually seen at rest.
+    scrollTrigger: { trigger: ".faces", start: "center center", end: () => "+=" + (track.scrollWidth - innerWidth), pin: true, scrub: 0.6, invalidateOnRefresh: true },
+  });
+})();
+
 /* ---------- Receipts: horizontal scroll on desktop ---------- */
 const mm = gsap.matchMedia();
 mm.add("(min-width: 769px) and (prefers-reduced-motion: no-preference)", () => {
@@ -884,7 +898,8 @@ document.fonts.ready.then(() => ScrollTrigger.refresh());
       y: 60, opacity: 0, duration: 1.2, ease: "expo.out", stagger: 0.09,
       scrollTrigger: { trigger: scene, start: "top 60%" },
     });
-    gsap.from($$("figcaption span", scene), { y: 20, opacity: 0, duration: 0.8, stagger: 0.1, delay: 0.8, ease: "power3.out", scrollTrigger: { trigger: scene, start: "top 70%" } });
+    const captions = $$("figcaption span", scene); // the menu and feast scenes have no photo caption
+    if (captions.length) gsap.from(captions, { y: 20, opacity: 0, duration: 0.8, stagger: 0.1, delay: 0.8, ease: "power3.out", scrollTrigger: { trigger: scene, start: "top 70%" } });
   });
 
   // The menu card is dealt onto the table, then its courses are served one by one
@@ -898,18 +913,6 @@ document.fonts.ready.then(() => ScrollTrigger.refresh());
   );
 })();
 
-/* ---------- Faces: the photo strip drifts with the scroll ---------- */
-(() => {
-  const track = $(".faces__track");
-  if (!track || reduce) return;
-  // Starts with the first photo at the left gutter and stops with its twin at the right gutter
-  const gutter = () => parseFloat(getComputedStyle($(".faces__head")).paddingLeft) || 16;
-  gsap.fromTo(track, { x: gutter }, {
-    x: () => -(track.scrollWidth - innerWidth + gutter()), ease: "none",
-    // Pinned, so both ends are actually seen at rest
-    scrollTrigger: { trigger: ".faces", start: "center center", end: () => "+=" + (track.scrollWidth - innerWidth), pin: true, scrub: 0.6, invalidateOnRefresh: true },
-  });
-})();
 
 /* ---------- Trophy shelf: medals hang from Ghana-striped ribbons ---------- */
 (() => {
